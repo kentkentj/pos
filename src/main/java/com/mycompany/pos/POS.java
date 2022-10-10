@@ -5,7 +5,6 @@
 
 package com.mycompany.pos;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 /**
  *

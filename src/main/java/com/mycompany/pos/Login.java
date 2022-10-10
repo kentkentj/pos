@@ -6,6 +6,7 @@ package com.mycompany.pos;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
 
 /**
  *
@@ -82,7 +83,17 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         String username_txt = username.getText();
         char[] password_txt = password.getPassword();
+        
         System.out.println("Login " + username_txt + password_txt);
+        
+        if("Kent".equals(username_txt) && Arrays.equals(password_txt, "123".toCharArray())) {
+            Dashboard dashboard = new Dashboard();
+            new Login().setVisible(false);
+            dashboard.setVisible(true);
+            
+        }else{
+            System.out.println("Password is Incorrect!");
+        }
     }//GEN-LAST:event_loginBtnActionPerformed
 
     /**
