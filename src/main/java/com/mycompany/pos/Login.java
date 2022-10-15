@@ -88,7 +88,7 @@ public class Login extends javax.swing.JFrame {
         
         if("Kent".equals(username_txt) && Arrays.equals(password_txt, "123".toCharArray())) {
             Dashboard dashboard = new Dashboard();
-            new Login().setVisible(false);
+            this.setVisible(false);
             dashboard.setVisible(true);
             
         }else{

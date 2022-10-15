@@ -26,36 +26,42 @@ public class Dashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        Dashboard = new javax.swing.JTextArea();
+        new_transaction = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Dashboard.setColumns(20);
-        Dashboard.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
-        Dashboard.setRows(5);
-        Dashboard.setText("DASHBOARD");
-        jScrollPane1.setViewportView(Dashboard);
+        new_transaction.setText("New Transaction");
+        new_transaction.setActionCommand("");
+        new_transaction.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                new_transactionActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(203, 203, 203)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(534, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(876, Short.MAX_VALUE)
+                .addComponent(new_transaction)
+                .addGap(64, 64, 64))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(158, 158, 158)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(232, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addComponent(new_transaction)
+                .addContainerGap(424, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void new_transactionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_new_transactionActionPerformed
+        // TODO add your handling code here:
+        new New_Transaction().setVisible(true);
+    }//GEN-LAST:event_new_transactionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -93,7 +99,6 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea Dashboard;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton new_transaction;
     // End of variables declaration//GEN-END:variables
 }

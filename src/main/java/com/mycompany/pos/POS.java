@@ -44,6 +44,8 @@ public class POS {
                 System.out.println("Admin");
             }
         });
+        
+        DBClass.getkoneksi();
     }
 }
 
